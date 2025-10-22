@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        #popup {
+        display: none;
+        position: fixed;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #f9f9f9;
+        border: 2px solid #333;
+        padding: 15px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      }
+      
+        .center-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px; 
+      }   
+      
+        .educational {
+            font-size: 5px;
+        }
+      
+      body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center; 
+      align-items: center; 
+      background-color: #e0e0e0;
+    }
+
+      .box {
+      width: 400px;
+      height: 400px;
+      border: 2px solid #333;
+      padding: 20px;
+      align-items: center;
+      background-color: #f0f0f0;
+    }
+
+      
+      h1 {
+          text-align: center;
+          font-family: 'Poppins', sans-serif;
+      }
+      
+      h2 {
+          text-align: center;
+          font-family: Arial;
+      }
+      
+      p {
+          text-align: center;
+          font-family: Arial;
+      }
+      
+    </style>
+    
+    <head>
+        <title> Google Security Alert </title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+      <div class="box"> 
+        <h1>
+            <span style="color: #4285F4;">G</span>
+            <span style="color: #EA4335;">o</span>
+            <span style="color: #FBBC05;">o</span>
+            <span style="color: #4285F4;">g</span>
+            <span style="color: #34A853;">l</span>
+            <span style="color: #EA4335;">e</span>
+        </h1>
+
+        <h2> A new sign-in on Windows </h2>
+        <p> your_email@gmail.com </p>
+        
+        <hr>
+        
+        <p> We noticed a new sign-in to your Google <br>
+        Account on another device. If this was you, <br>
+        press the button below to vertify that was you. <br>
+        We'll help you secure your account. <br> </p>
+        
+        <div class="center-button">
+            <button onclick="document.getElementById('popup').style.display='block'" style="background-color: #b6a5d4">
+                Check activity
+            </button>
+        </div>
+
+        <div id="popup" style="background-color: #ff1414">
+            <p> <strong> Thank you for installing the Six-Seven virus. </strong> </p>
+        </div>
+
+        <p class="educational"> This is for educational purposes. No data is being taken at all. </p>
+
+      </div>        
+    </body>
+</html>
